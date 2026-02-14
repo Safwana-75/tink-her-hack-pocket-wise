@@ -72,11 +72,14 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+![Screenshot1](Dashbaord.png)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![Screenshot2](Expenses.png)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![Screenshot3](Income.png)
+*Add caption explaining what this shows*
+
+![Screenshot4](Calendar.png)
 *Add caption explaining what this shows*
