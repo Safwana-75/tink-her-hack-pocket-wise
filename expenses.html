@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PocketWise - Expenses</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="expenses-container">
+
+    <!-- LEFT SECTION -->
+    <div class="left-section">
+
+        <h1 class="app-title">PocketWise</h1>
+        <h2>Expenses</h2>
+
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+
+        <div class="mini-cards">
+            <div class="mini-card">
+                <h4>Current Balance</h4>
+                <p id="currentBalance"></p>
+            </div>
+
+            <div class="mini-card">
+                <h4>Total Spent</h4>
+                <p id="totalSpent"></p>
+            </div>
+        </div>
+
+        <div class="expense-list">
+            <h3>Expense List</h3>
+            <ul id="expenseItems"></ul>
+        </div>
+
+    </div>
+
+
+    <!-- CENTER SECTION -->
+    <div class="center-section">
+
+        <div class="add-card">
+            <h2>Add Expense</h2>
+
+            <input type="number" id="amount" placeholder="Enter Amount">
+
+            <!-- ONLY ONE SELECT -->
+            <select id="category" onchange="handleCategoryChange()">
+                <option value="">Select Category</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Academic">Academic</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Custom category input (hidden by default) -->
+            <input 
+                type="text" 
+                id="customCategory" 
+                placeholder="Enter custom category"
+                style="display: none; margin-top:10px;"
+            >
+
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+
+        <div class="chart-card">
+            <h3>Expenses Breakdown</h3>
+            <canvas id="expenseChart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

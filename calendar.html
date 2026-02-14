@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PocketWise - Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calendar-page">
+
+    <h1 class="app-title">PocketWise</h1>
+
+    <div class="calendar-header">
+        <button onclick="changeMonth(-1)">◀</button>
+        <h2 id="monthTitle"></h2>
+        <button onclick="changeMonth(1)">▶</button>
+    </div>
+
+    <div class="monthly-summary">
+        <p>Total This Month: <span id="monthlyTotal">₹0</span></p>
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+
+    <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+    </div>
+
+    <div id="calendar" class="calendar-grid"></div>
+
+    <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

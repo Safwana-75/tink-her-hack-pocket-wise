@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PocketWise - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+            <h1 class="main-title">PocketWise</h1>
+            <h2 id="welcome" class="welcome-text"></h2>
+        </div>
+
+        <!-- TOP NAVIGATION PANEL -->
+        <div class="dashboard-nav">
+            <button onclick="window.location.href='expenses.html'">Expenses</button>
+            <button onclick="window.location.href='savings.html'">Savings</button>
+            <button onclick="window.location.href='calendar.html'">Calendar</button>
+        </div>
+
+        <!-- STATS GRID -->
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3>Monthly Budget</h3>
+                <p id="budgetDisplay"></p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Total Spent</h3>
+                <p id="spentDisplay"></p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Remaining</h3>
+                <p id="remainingDisplay"></p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Savings Goal</h3>
+                <p id="goalDisplay"></p>
+            </div>
+
+        </div>
+    <!-- SMART INSIGHTS SECTION -->
+<div class="insights-card">
+    <h3>🧠 Smart Financial Insights (Student Mode)</h3>
+
+    <div class="insight-item">
+        <p id="budgetUsageInsight"></p>
+    </div>
+
+    <div class="insight-item">
+        <p id="dailyAverageInsight"></p>
+    </div>
+
+    <div class="insight-item">
+        <p id="projectionInsight"></p>
+    </div>
+
+    <div class="insight-item">
+        <p id="savingsProgressInsight"></p>
+    </div>
+
+    <div class="insight-item">
+        <p id="studentTip"></p>
+    </div>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

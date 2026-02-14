@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PocketWise - Savings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="savings-container">
+
+    <!-- LEFT SECTION -->
+    <div class="left-section">
+
+        <h1 class="app-title">PocketWise</h1>
+        <h2>Savings</h2>
+
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+
+        <div class="savings-summary">
+            <div class="summary-box">
+                <h4>Current Savings</h4>
+                <p id="currentSavings"></p>
+            </div>
+
+            <div class="summary-box">
+                <h4>Savings Goal</h4>
+                <p id="savingsGoal"></p>
+            </div>
+        </div>
+
+       <div class="chart-card">
+    <h3>Savings Progress</h3>
+    <canvas id="savingsChart"></canvas>
+</div>
+
+
+    </div>
+
+
+    <!-- CENTER SECTION -->
+    <div class="center-section">
+
+        <div class="add-card">
+            <h2>Add Income</h2>
+
+            <input type="number" id="incomeAmount" placeholder="Enter Amount">
+
+            <button onclick="addIncome()">Add Income</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
